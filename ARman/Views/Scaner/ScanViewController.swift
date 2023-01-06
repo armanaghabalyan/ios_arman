@@ -85,12 +85,16 @@ class ScanViewController: BaseViewController {
         guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
             fatalError("Missing expected asset catalog resources.")
         }
-        
+    
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = referenceImages
         //configuration.trackingImages = customReferenceSet
-        session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         
+        if AVAudioSession.sharedInstance().recordPermission == .undetermined || AVAudioSession.sharedInstance().recordPermission == .granted {
+            configuration.providesAudioData = true
+        }
+        
+        session.run(configuration, options: [.resetTracking, .removeExistingAnchors]) 
     }
     
     func setupGestureRecognizer() {
