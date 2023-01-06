@@ -1,0 +1,20 @@
+PODS:
+  - MTDMulticastDelegate (1.0.1)
+  - SCNRecorder (2.8.1):
+    - MTDMulticastDelegate
+
+DEPENDENCIES:
+  - SCNRecorder
+
+SPEC REPOS:
+  trunk:
+    - MTDMulticastDelegate
+    - SCNRecorder
+
+SPEC CHECKSUMS:
+  MTDMulticastDelegate: dcedff914c281710e3faa64b79ff775741f25b4b
+  SCNRecorder: dd694ba1c5cd541a58f0794a45d70262109c7024
+
+PODFILE CHECKSUM: 14c7aaf77f43d79cc49efe1aef0b88aab85904be
+
+COCOAPODS: 1.11.3

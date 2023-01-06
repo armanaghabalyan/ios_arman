@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "take_scene_photo_icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

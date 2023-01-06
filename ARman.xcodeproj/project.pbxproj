@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2F88FE26E24C0111334CCB /* Pods_ARman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0368404CCB96D0ED09E0C0C9 /* Pods_ARman.framework */; };
+		C54EE128293B656600027F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE127293B656600027F19 /* AppDelegate.swift */; };
+		C54EE12A293B656600027F19 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C54EE129293B656600027F19 /* art.scnassets */; };
+		C54EE12F293B656600027F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54EE12D293B656600027F19 /* Main.storyboard */; };
+		C54EE131293B656800027F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54EE130293B656800027F19 /* Assets.xcassets */; };
+		C54EE134293B656800027F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54EE132293B656800027F19 /* LaunchScreen.storyboard */; };
+		C54EE13F293B73CF00027F19 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE13C293B73CF00027F19 /* ScanViewController.swift */; };
+		C54EE140293B73CF00027F19 /* ScanViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE13D293B73CF00027F19 /* ScanViewController+ARSessionDelegate.swift */; };
+		C54EE142293B743800027F19 /* SelectVirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE141293B743800027F19 /* SelectVirtualObject.swift */; };
+		C54EE144293B747A00027F19 /* VirtualObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE143293B747A00027F19 /* VirtualObjectManager.swift */; };
+		C54EE146293B74AB00027F19 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE145293B74AB00027F19 /* VirtualObject.swift */; };
+		C54EE148293B750A00027F19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE147293B750A00027F19 /* Utilities.swift */; };
+		C54EE14A293B757800027F19 /* PlayVideoContentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE149293B757800027F19 /* PlayVideoContentHelper.swift */; };
+		C54EE14C293B759800027F19 /* ChromaKeyMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE14B293B759800027F19 /* ChromaKeyMaterial.swift */; };
+		C54EE152293BE8D600027F19 /* ScanViewController+RenderARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE151293BE8D600027F19 /* ScanViewController+RenderARDelegate.swift */; };
+		C54EE155293BE97500027F19 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE154293BE97500027F19 /* UIView+Extensions.swift */; };
+		C54EE158293BEA2600027F19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE157293BEA2600027F19 /* BaseViewController.swift */; };
+		C54EE15A293BEAE500027F19 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE159293BEAE500027F19 /* MainNavigationController.swift */; };
+		C54EE15E293BEB5000027F19 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54EE15C293BEB5000027F19 /* VideoPlayerViewController.xib */; };
+		C54EE15F293BEB5000027F19 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE15D293BEB5000027F19 /* VideoPlayerViewController.swift */; };
+		C54EE162293BEBAA00027F19 /* PHPhotoLibraryAuthorizationStatusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EE161293BEBAA00027F19 /* PHPhotoLibraryAuthorizationStatusHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0368404CCB96D0ED09E0C0C9 /* Pods_ARman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCEA4FE818159AC4F656CEF /* Pods-ARman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARman.debug.xcconfig"; path = "Target Support Files/Pods-ARman/Pods-ARman.debug.xcconfig"; sourceTree = "<group>"; };
+		C54EE124293B656600027F19 /* ARman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54EE127293B656600027F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54EE129293B656600027F19 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		C54EE12E293B656600027F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54EE130293B656800027F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54EE133293B656800027F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54EE13C293B73CF00027F19 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		C54EE13D293B73CF00027F19 /* ScanViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
+		C54EE141293B743800027F19 /* SelectVirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVirtualObject.swift; sourceTree = "<group>"; };
+		C54EE143293B747A00027F19 /* VirtualObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectManager.swift; sourceTree = "<group>"; };
+		C54EE145293B74AB00027F19 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		C54EE147293B750A00027F19 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C54EE149293B757800027F19 /* PlayVideoContentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoContentHelper.swift; sourceTree = "<group>"; };
+		C54EE14B293B759800027F19 /* ChromaKeyMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyMaterial.swift; sourceTree = "<group>"; };
+		C54EE151293BE8D600027F19 /* ScanViewController+RenderARDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanViewController+RenderARDelegate.swift"; sourceTree = "<group>"; };
+		C54EE154293BE97500027F19 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C54EE157293BEA2600027F19 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C54EE159293BEAE500027F19 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		C54EE15C293BEB5000027F19 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
+		C54EE15D293BEB5000027F19 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		C54EE161293BEBAA00027F19 /* PHPhotoLibraryAuthorizationStatusHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPhotoLibraryAuthorizationStatusHelper.swift; sourceTree = "<group>"; };
+		E8471F4705168B970B9338AF /* Pods-ARman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARman.release.xcconfig"; path = "Target Support Files/Pods-ARman/Pods-ARman.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54EE121293B656600027F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2F88FE26E24C0111334CCB /* Pods_ARman.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38EEEB078F6A277092F3CE65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0368404CCB96D0ED09E0C0C9 /* Pods_ARman.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C54EE11B293B656600027F19 = {
+			isa = PBXGroup;
+			children = (
+				C54EE126293B656600027F19 /* ARman */,
+				C54EE125293B656600027F19 /* Products */,
+				F9962563CC50C93941B4A761 /* Pods */,
+				38EEEB078F6A277092F3CE65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C54EE125293B656600027F19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE124293B656600027F19 /* ARman.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54EE126293B656600027F19 /* ARman */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE13A293B73CF00027F19 /* Views */,
+				C54EE156293BEA0800027F19 /* Common */,
+				C54EE14D293B75B500027F19 /* Utilities */,
+				C54EE14F293B75E000027F19 /* Helpers */,
+				C54EE14E293B75D000027F19 /* Managers */,
+				C54EE153293BE96200027F19 /* Extensions */,
+				C54EE150293B75ED00027F19 /* VirtualObject */,
+				C54EE127293B656600027F19 /* AppDelegate.swift */,
+				C54EE129293B656600027F19 /* art.scnassets */,
+				C54EE12D293B656600027F19 /* Main.storyboard */,
+				C54EE130293B656800027F19 /* Assets.xcassets */,
+				C54EE132293B656800027F19 /* LaunchScreen.storyboard */,
+			);
+			path = ARman;
+			sourceTree = "<group>";
+		};
+		C54EE13A293B73CF00027F19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE15B293BEB5000027F19 /* VideoPlayer */,
+				C54EE160293BEB6400027F19 /* Scaner */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C54EE14D293B75B500027F19 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE14B293B759800027F19 /* ChromaKeyMaterial.swift */,
+				C54EE147293B750A00027F19 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C54EE14E293B75D000027F19 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE143293B747A00027F19 /* VirtualObjectManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C54EE14F293B75E000027F19 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE149293B757800027F19 /* PlayVideoContentHelper.swift */,
+				C54EE161293BEBAA00027F19 /* PHPhotoLibraryAuthorizationStatusHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C54EE150293B75ED00027F19 /* VirtualObject */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE141293B743800027F19 /* SelectVirtualObject.swift */,
+				C54EE145293B74AB00027F19 /* VirtualObject.swift */,
+			);
+			path = VirtualObject;
+			sourceTree = "<group>";
+		};
+		C54EE153293BE96200027F19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE154293BE97500027F19 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C54EE156293BEA0800027F19 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE157293BEA2600027F19 /* BaseViewController.swift */,
+				C54EE159293BEAE500027F19 /* MainNavigationController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C54EE15B293BEB5000027F19 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE15C293BEB5000027F19 /* VideoPlayerViewController.xib */,
+				C54EE15D293BEB5000027F19 /* VideoPlayerViewController.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		C54EE160293BEB6400027F19 /* Scaner */ = {
+			isa = PBXGroup;
+			children = (
+				C54EE13C293B73CF00027F19 /* ScanViewController.swift */,
+				C54EE13D293B73CF00027F19 /* ScanViewController+ARSessionDelegate.swift */,
+				C54EE151293BE8D600027F19 /* ScanViewController+RenderARDelegate.swift */,
+			);
+			path = Scaner;
+			sourceTree = "<group>";
+		};
+		F9962563CC50C93941B4A761 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FCEA4FE818159AC4F656CEF /* Pods-ARman.debug.xcconfig */,
+				E8471F4705168B970B9338AF /* Pods-ARman.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54EE123293B656600027F19 /* ARman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54EE137293B656800027F19 /* Build configuration list for PBXNativeTarget "ARman" */;
+			buildPhases = (
+				E1973CCA825E17E29416D51C /* [CP] Check Pods Manifest.lock */,
+				C54EE120293B656600027F19 /* Sources */,
+				C54EE121293B656600027F19 /* Frameworks */,
+				C54EE122293B656600027F19 /* Resources */,
+				B49E5FFA723E3FBB65CE9565 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARman;
+			productName = ARman;
+			productReference = C54EE124293B656600027F19 /* ARman.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54EE11C293B656600027F19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C54EE123293B656600027F19 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = C54EE11F293B656600027F19 /* Build configuration list for PBXProject "ARman" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54EE11B293B656600027F19;
+			productRefGroup = C54EE125293B656600027F19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54EE123293B656600027F19 /* ARman */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54EE122293B656600027F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54EE12A293B656600027F19 /* art.scnassets in Resources */,
+				C54EE134293B656800027F19 /* LaunchScreen.storyboard in Resources */,
+				C54EE15E293BEB5000027F19 /* VideoPlayerViewController.xib in Resources */,
+				C54EE131293B656800027F19 /* Assets.xcassets in Resources */,
+				C54EE12F293B656600027F19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B49E5FFA723E3FBB65CE9565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARman/Pods-ARman-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARman/Pods-ARman-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARman/Pods-ARman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1973CCA825E17E29416D51C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARman-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54EE120293B656600027F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54EE162293BEBAA00027F19 /* PHPhotoLibraryAuthorizationStatusHelper.swift in Sources */,
+				C54EE140293B73CF00027F19 /* ScanViewController+ARSessionDelegate.swift in Sources */,
+				C54EE14A293B757800027F19 /* PlayVideoContentHelper.swift in Sources */,
+				C54EE144293B747A00027F19 /* VirtualObjectManager.swift in Sources */,
+				C54EE15F293BEB5000027F19 /* VideoPlayerViewController.swift in Sources */,
+				C54EE14C293B759800027F19 /* ChromaKeyMaterial.swift in Sources */,
+				C54EE128293B656600027F19 /* AppDelegate.swift in Sources */,
+				C54EE158293BEA2600027F19 /* BaseViewController.swift in Sources */,
+				C54EE142293B743800027F19 /* SelectVirtualObject.swift in Sources */,
+				C54EE146293B74AB00027F19 /* VirtualObject.swift in Sources */,
+				C54EE152293BE8D600027F19 /* ScanViewController+RenderARDelegate.swift in Sources */,
+				C54EE148293B750A00027F19 /* Utilities.swift in Sources */,
+				C54EE13F293B73CF00027F19 /* ScanViewController.swift in Sources */,
+				C54EE15A293BEAE500027F19 /* MainNavigationController.swift in Sources */,
+				C54EE155293BE97500027F19 /* UIView+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C54EE12D293B656600027F19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54EE12E293B656600027F19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54EE132293B656800027F19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54EE133293B656800027F19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C54EE135293B656800027F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C54EE136293B656800027F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C54EE138293B656800027F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCEA4FE818159AC4F656CEF /* Pods-ARman.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4N86QC9XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting realityThe camera is used for augmenting reality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone is used when recording your videos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We're requesting access to save your videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We're requesting access to save your videos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aghabalyan.ARman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C54EE139293B656800027F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8471F4705168B970B9338AF /* Pods-ARman.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4N86QC9XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting realityThe camera is used for augmenting reality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The microphone is used when recording your videos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We're requesting access to save your videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We're requesting access to save your videos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aghabalyan.ARman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54EE11F293B656600027F19 /* Build configuration list for PBXProject "ARman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54EE135293B656800027F19 /* Debug */,
+				C54EE136293B656800027F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54EE137293B656800027F19 /* Build configuration list for PBXNativeTarget "ARman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54EE138293B656800027F19 /* Debug */,
+				C54EE139293B656800027F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54EE11C293B656600027F19 /* Project object */;
+}
